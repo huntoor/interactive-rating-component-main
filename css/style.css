@@ -1,0 +1,139 @@
+:root {
+  --Primary-Orange: hsl(25, 97%, 53%);
+  --Ligh-Grey: hsl(217, 12%, 63%);
+  --Medium-Blue: hsl(215, 20%, 25%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  min-height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px 15px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--Dark-Blue);
+  align-self: center;
+}
+
+
+/* Before Submitting */
+.card-one .icon {
+  background-color: var(--Medium-Blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.card-one .ratting .error {
+  color: #ff3333;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card-one .ratting ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-one .ratting ul li {
+  background-color: var(--Medium-Blue);
+  color: var(--Ligh-Grey);
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-one .ratting ul li:hover:not(li.active) {
+  background-color: var(--Primary-Orange);
+  color: white;
+}
+
+.card-one .ratting ul li.active {
+  background-color: var(--Ligh-Grey);
+  color: white;
+}
+
+.card-one .submit button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--Primary-Orange);
+  color: white;
+  transition: 0.3s;
+}
+.card-one .submit button:hover {
+  background-color: white;
+  color: var(--Primary-Orange);
+}
+
+/* After Submitting */
+.card-two {
+  text-align: center;
+}
+
+.card-two img {
+  margin: 20px 0;
+}
+
+.card-two .selected-ratting {
+  background-color: var(--Medium-Blue);
+  width: fit-content;
+  margin: 0px auto 20px auto;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: var(--Primary-Orange);
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a { 
+  color: var(--Primary-Orange); 
+}
+
+.text p {
+  font-size: 15px;
+  margin: 20px 0;
+  color: var(--Ligh-Grey);
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
