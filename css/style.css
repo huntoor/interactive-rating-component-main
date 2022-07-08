@@ -33,7 +33,7 @@ body {
 
 
 /* Before Submitting */
-.card-one .icon {
+.rating-card .icon {
   background-color: var(--Medium-Blue);
   width: 40px;
   height: 40px;
@@ -44,20 +44,20 @@ body {
   border-radius: 50%;
 }
 
-.card-one .ratting .error {
+.rating-card .rating .error {
   color: #ff3333;
   font-size: 15px;
   text-align: center;
   margin-bottom: 8px;
 }
 
-.card-one .ratting ul {
+.rating-card .rating ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-.card-one .ratting ul li {
+.rating-card .rating ul li {
   background-color: var(--Medium-Blue);
   color: var(--Ligh-Grey);
   font-weight: bold;
@@ -70,17 +70,17 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.card-one .ratting ul li:hover:not(li.active) {
+.rating-card .rating ul li:hover:not(li.active) {
   background-color: var(--Primary-Orange);
   color: white;
 }
 
-.card-one .ratting ul li.active {
+.rating-card .rating ul li.active {
   background-color: var(--Ligh-Grey);
   color: white;
 }
 
-.card-one .submit button {
+.rating-card .submit button {
   width: 100%;
   margin-top: 30px;
   padding: 15px;
@@ -95,21 +95,21 @@ body {
   color: white;
   transition: 0.3s;
 }
-.card-one .submit button:hover {
+.rating-card .submit button:hover {
   background-color: white;
   color: var(--Primary-Orange);
 }
 
 /* After Submitting */
-.card-two {
+.success-card {
   text-align: center;
 }
 
-.card-two img {
+.success-card img {
   margin: 20px 0;
 }
 
-.card-two .selected-ratting {
+.success-card .selected-rating {
   background-color: var(--Medium-Blue);
   width: fit-content;
   margin: 0px auto 20px auto;
